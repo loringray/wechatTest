@@ -1,0 +1,50 @@
+<!-- pages/ranking/ranking.wxml
+<text>pages/ranking/ranking.wxml</text> -->
+
+<!-- 图片懒加载功能练习 -->
+<block wx:for="{{group}}" wx:key="1">
+  <view class="loadImg loadImg{{index}} {{item.show? 'active' : ''}}" >
+    <image wx:if='{{item.show}}' style='width:300rpx;height:260rpx;' src='{{item.src}}'></image>
+    <image wx:else class='image-loading' src='{{item.def}}' mode='aspectFit'></image>
+      <view>
+          <text>导演：/</text>
+      </view>
+      <view>
+           <text>评分：8.0</text>
+      </view>
+      <view>
+           <text>主演：测试</text>
+      </view>
+      
+  </view>
+</block>
+
+
+<!-- 
+<block wx:if="{{showLoading}}">
+</block> -->
+<!-- <block wx:else>
+<scroll-view class='scroll-module' scroll-y='true' scroll-top="0" bindscrolltoupper="scroll_top" bindscrolltolower="scroll_bottom">
+  <view wx:for="{{ranklist}}" wx:key="{{index}}" id='item-view' bindtap='onChangeEvent' data-id="{{item.id}}">
+    <view class='scroll-left'> 
+          <image class='left_img' src='{{item.images.large}}'></image>  
+    </view>
+    <view class='scroll-right'>
+         <view class='row' style=''>
+            <text>影片名:{{item.original_title}} {{item.year}}</text>
+         </view>
+         <view class='row'>
+            <text>评分:{{item.rating.average}}</text>
+         </view>
+         <view class='row'>
+            <text>导演:<text wx:for="{{item.directors}} " wx:for-item="d" wx:key="{{index}}">
+            {{d.name}}</text></text>
+         </view>
+         <view class='row'>
+            <text>主演:<text wx:for="{{item.casts}}" wx:for-item="c" wx:key="{{index}}">{{c.name}}</text></text>
+         </view>
+     </view>
+   </view>
+</scroll-view>
+
+</block> -->

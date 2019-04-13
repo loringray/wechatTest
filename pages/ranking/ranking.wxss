@@ -1,0 +1,28 @@
+/* pages/ranking/ranking.wxss */
+/* .module-group-title{
+  font-size: 45rpx;
+  align-items: center;
+  margin-left: 300rpx;
+}
+.rank-image{
+  width: 330rpx;
+  height: 300rpx;
+} */
+
+.loadImg{
+  width: 100vw;
+  height: 46vw;
+  transition: all .2s ease-in-out;
+  opacity: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.loadImg.active{
+  opacity: 1;
+}
+.image-loading{
+   width:20%;
+   height:20%;
+   margin:0 auto;
+   margin-top:50%;
+}

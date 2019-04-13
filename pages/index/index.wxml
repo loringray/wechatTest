@@ -1,0 +1,21 @@
+<searchbar isnavigator="{{true}}"></searchbar>
+<!-- <view>这是首页</view> -->
+<!-- 首页轮播图 -->
+<view class='swiper-container'>
+  <navigator url='../search/search'>
+    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{circular}}' current='{{swiperCurrent}}' bindchange='swiperChange' class='swiper'>
+        <block wx:for="{{swiperimg}}" wx:key="{{swiper-id}}">
+           <swiper-item>
+             <image src='{{item}}' class='swiper-img' bindtap='swiperClick'></image>
+           </swiper-item>
+        </block>   
+    </swiper>
+    </navigator>
+</view>
+
+<!-- 电影模块 -->
+<indexmodule title="电影" items="{{movies}}" moreurl="/pages/list/list?type=movie" type="movie"></indexmodule>
+
+<!-- 电视剧模块 -->
+<indexmodule title="电视剧" items="{{tvs}}" moreurl="/pages/list/list?type=tv" type="tv"></indexmodule>
+

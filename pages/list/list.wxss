@@ -1,0 +1,7 @@
+.container{
+  display: flex;
+  /* 水平布局，主轴 */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30rpx;
+}
