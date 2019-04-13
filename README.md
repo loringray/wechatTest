@@ -1,3 +1,2 @@
 # testgit
-review testgit
-git 测试
+微信小程序豆瓣电影练习：
